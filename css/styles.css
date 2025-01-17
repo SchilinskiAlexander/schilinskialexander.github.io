@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Grauer Filter */
+    z-index: 1;
+}
+
+.background {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.background {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid transparent;
+    background: linear-gradient(white, white), linear-gradient(45deg, #FF2D20, #FF6E40);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+
+h1 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.button.telegram {
+    background: #0088cc;
+}
+
+.button.whatsapp {
+    background: #25D366;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
